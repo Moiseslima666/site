@@ -252,7 +252,7 @@ tr:hover {
                 </div>
 
                 <div class="form-group">
-                    <button type="submit">Enviar Relatório</button>
+                    <button type="submit" onclick="alertFunction()">Enviar Relatório</button>
                 </div>
             </form>
         </section>
@@ -346,6 +346,9 @@ tr:hover {
                 }
                 document.getElementById(tabName).style.display = "block";
                 evt.currentTarget.classList.add("active");
+            }
+            function alertFunction() {
+                alert("Relátorio enviado com sucesso!");
             }
         </script>
     </footer>
